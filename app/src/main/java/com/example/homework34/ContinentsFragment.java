@@ -28,17 +28,20 @@ public class ContinentsFragment extends Fragment implements onClick{
         super.onViewCreated(view, savedInstanceState);
         loadData();
         ContinentAdapter adapter = new ContinentAdapter(continentList, this);
-        binding.rvContinents.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.rvContinents.setAdapter(adapter);
     }
 
     private void loadData() {
         continentList.add(new Continent("Eurasia","https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3ABlankMap-Eurasia.svg&psig=AOvVaw38eBlVRPxb3BH8sVb3y8Hg&ust=1711007688424000&source=im" +
                 "ages&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPiXxb2ugoUDFQAAAAAdAAAAABAa"));
-        continentList.add(new Continent("North America",""));
-        continentList.add(new Continent("South America",""));
-        continentList.add(new Continent("Australia",""));
-        continentList.add(new Continent("Africa",""));
+        continentList.add(new Continent("North America","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sharada." +
+                "ru%2Fkatalog%2Fmaps%2Fworld%2Fpoliticheskaja-karta-mira-923&psig=AOvVaw2Pvh3sg_kXQhw-I5l49LIn&ust=1711044175387000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjy-7S2g4UDFQAAAAAdAAAAABAJ"));
+        continentList.add(new Continent("South America","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sharada." +
+                "ru%2Fkatalog%2Fmaps%2Fworld%2Fpoliticheskaja-karta-mira-923&psig=AOvVaw2Pvh3sg_kXQhw-I5l49LIn&ust=1711044175387000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjy-7S2g4UDFQAAAAAdAAAAABAJ"));
+        continentList.add(new Continent("Australia","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sharada.ru%2Fkatalog%2Fmaps%2Fworld%2Fpoliticheskaja-k" +
+                "arta-mira-923&psig=AOvVaw2Pvh3sg_kXQhw-I5l49LIn&ust=1711044175387000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjy-7S2g4UDFQAAAAAdAAAAABAJ"));
+        continentList.add(new Continent("Africa","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sharada.ru%2Fkatalog%2Fmaps%2Fworld%2Fpoliticheskaja-karta-mira-923&psig=AOvVaw2Pvh3sg_kXQhw-I5l49LIn&ust=17" +
+                "11044175387000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjy-7S2g4UDFQAAAAAdAAAAABAJ"));
     }
 
     @Override
@@ -48,8 +51,8 @@ public class ContinentsFragment extends Fragment implements onClick{
 
         CountryFragment countryFragment = new CountryFragment();
         countryFragment.setArguments(bundle);
-        requireActivity().getSupportFragmentManager().beginTransaction().add(R.id.container,
-                countryFragment).addToBackStack(null).commit();
+        requireActivity().getSupportFragmentManager().beginTransaction().add
+                (R.id.container, countryFragment).addToBackStack(null).commit();
 
     }
 }

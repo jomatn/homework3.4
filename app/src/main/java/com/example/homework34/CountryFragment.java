@@ -19,8 +19,7 @@ public class CountryFragment extends Fragment {
     private FragmentCountryBinding binding;
     private ArrayList<Country> countryList = new ArrayList<>();
     private int position;
-    private RecyclerView.Adapter CountryAdapter;
-
+    private CountryAdapter countryAdapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -62,38 +61,32 @@ public class CountryFragment extends Fragment {
 
     private void loadEurasiaData() {
         countryList.clear();
-        countryList.add(new Country("Russia"));
-        countryList.add(new Country("China"));
-        countryList.add(new Country("India"));
-        binding.rvCountry.getAdapter().notifyDataSetChanged();
+        countryList.add(new Country("Russia", ""));
+        countryList.add(new Country("China", ""));
+        countryList.add(new Country("India", ""));
     }
     private void loadAfricaData() {
         countryList.clear();
-        countryList.add(new Country("Russia"));
-        countryList.add(new Country("China"));
-        countryList.add(new Country("India"));
-        binding.rvCountry.getAdapter().notifyDataSetChanged();
+        countryList.add(new Country("Russia", ""));
+        countryList.add(new Country("China", ""));
+        countryList.add(new Country("India", ""));
     }
     private void loadAustraliaData() {
         countryList.clear();
-        countryList.add(new Country("Russia"));
-        countryList.add(new Country("China"));
-        countryList.add(new Country("India"));
-        binding.rvCountry.getAdapter().notifyDataSetChanged();
+        countryList.add(new Country("Russia", ""));
+        countryList.add(new Country("China", ""));
+        countryList.add(new Country("India", ""));
     }
     private void loadNorthAmericaData() {
         countryList.clear();
-        countryList.add(new Country("Russia"));
-        countryList.add(new Country("China"));
-        countryList.add(new Country("India"));
-        binding.rvCountry.setAdapter(CountryAdapter);
-        binding.rvCountry.setLayoutManager(new LinearLayoutManager(requireContext()));
+        countryList.add(new Country("Russia", ""));
+        countryList.add(new Country("China", ""));
+        countryList.add(new Country("India", ""));
     }
     private void loadSouthAmericaData() {
         countryList.clear();
-        countryList.add(new Country("Russia"));
-        countryList.add(new Country("China"));
-        countryList.add(new Country("India"));
-        binding.rvCountry.getAdapter().notifyDataSetChanged();
+        countryList.add(new Country("Russia", ""));
+        countryList.add(new Country("China", ""));
+        countryList.add(new Country("India", ""));
     }
 }

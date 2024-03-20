@@ -12,12 +12,14 @@
         android:textSize="35sp"
         android:textColor="@color/black"
         android:id="@+id/tvCountry"
-        app:layout_constraintStart_toEndOf="@id/iv_flag"/>
+        app:layout_constraintStart_toEndOf="@id/iv_flag"
+        app:layout_constraintTop_toTopOf="parent"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/iv_flag"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
