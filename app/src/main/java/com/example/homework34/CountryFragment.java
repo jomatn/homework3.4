@@ -70,23 +70,28 @@ public class CountryFragment extends Fragment {
         countryList.add(new Country("Russia", ""));
         countryList.add(new Country("China", ""));
         countryList.add(new Country("India", ""));
+        countryList.add(new Country("Korea", ""));
+        countryList.add(new Country("Kyrgystan", ""));
     }
     private void loadAustraliaData() {
         countryList.clear();
-        countryList.add(new Country("Russia", ""));
-        countryList.add(new Country("China", ""));
-        countryList.add(new Country("India", ""));
+        countryList.add(new Country("Australia", ""));
+        countryList.add(new Country("New Zeland", ""));
     }
     private void loadNorthAmericaData() {
         countryList.clear();
-        countryList.add(new Country("Russia", ""));
-        countryList.add(new Country("China", ""));
-        countryList.add(new Country("India", ""));
+        countryList.add(new Country("USA", ""));
+        countryList.add(new Country("Canada", ""));
+        countryList.add(new Country("Mexico", ""));
+        countryList.add(new Country("Cuba", ""));
+        countryList.add(new Country("Beliz", ""));
     }
     private void loadSouthAmericaData() {
         countryList.clear();
-        countryList.add(new Country("Russia", ""));
-        countryList.add(new Country("China", ""));
-        countryList.add(new Country("India", ""));
+        countryList.add(new Country("Brazil", ""));
+        countryList.add(new Country("Chilli", ""));
+        countryList.add(new Country("Peru", ""));
+        countryList.add(new Country("Columbia", ""));
+        countryList.add(new Country("Argentina", ""));
     }
 }
